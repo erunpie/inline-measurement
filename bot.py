@@ -105,7 +105,7 @@ def inlinequery(update: Update, _: CallbackContext) :
     update.inline_query.answer(results,cache_time=0)
 
 def info(update: Update, context: CallbackContext) :
-    update.message.reply_text('This is really simple bot wich is written in python by | @e_run_pie | \n If you want source code  visit : \nhttps://github.com/erunpie/inline-video')
+    update.message.reply_text('This is really simple bot wich is written in python by | @e_run_pie | \n If you want source code  visit : \nhttps://github.com/erunpie/inline-measurement')
 def main() :
     updater = Updater(TOKEN)
     dispatcher = updater.dispatcher

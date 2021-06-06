@@ -110,10 +110,9 @@ def main() :
     updater = Updater(TOKEN)
     dispatcher = updater.dispatcher
 
-    dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(CommandHandler("info", info))
-
-    dispatcher.add_handler(InlineQueryHandler(inlinequery))
+    dispatcher.add_handler(CommandHandler("start", start,run_async=True))
+    dispatcher.add_handler(CommandHandler("info", info,run_async=True))
+    dispatcher.add_handler(InlineQueryHandler(inlinequery,run_async=True))
 
 
     updater.start_polling()
